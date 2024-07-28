@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, nav, main, footer {
+  padding: 1em;
+}
+
+header {
+  background-color: #333;
+  color: white;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  flex: 1 1 200px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Pseudo-classes */
+.button:hover {
+  background-color: #ddd;
+}
+
+.button:active {
+  background-color: #ccc;
+}
+
+.button:focus {
+  outline: 2px solid #333;
+}
